@@ -1,6 +1,8 @@
 #!/bin/sh
 
+VERSION=1.0.0
 JAVAC=$JAVA_HOME/bin/javac
+JAR=$JAVA_HOME/bin/jar
 JAVAH=$JAVA_HOME/bin/javah
 INCLUDE=$JAVA_HOME/include
 
@@ -12,4 +14,4 @@ $JAVAH -jni -classpath . -o B.h a.B
 
 cc -shared -I$INCLUDE -I$INCLUDE/linux/ B.c -o libB.so
 
-
+$JAR -cf beaglebone-mmap-$VERSION.jar *
