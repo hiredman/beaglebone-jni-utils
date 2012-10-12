@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=1.0.0
+VERSION=1.0.0-SNAPSHOT
 JAVAC=$JAVA_HOME/bin/javac
 JAR=$JAVA_HOME/bin/jar
 JAVAH=$JAVA_HOME/bin/javah
